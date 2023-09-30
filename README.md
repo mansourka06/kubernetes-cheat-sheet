@@ -9,26 +9,27 @@ This repository contains a list of commonly used kubernetes architecture, comman
 
 ## Kubernetes Architecture
 
-Kubernetes architecture is built around a set of key components that work together to ensure the reliable and efficient operation of containerized workloads. Here's a brief description of its architecture.
+Kubernetes architecture is built around a set of key components that work together to ensure the reliable and efficient operation of containerized workloads. Here's a brief description of its architecture Components.
 
-### Kubernetes Components
+- **Control Plane (Master Node)**:
+  - **API Server:** The central control point for all interactions with the cluster, exposing the Kubernetes API.
+  - **Etcd:** A distributed key-value store for storing cluster configuration data.
+  - **Scheduler:** Responsible for placing workloads onto nodes in the cluster.
+  - **Controller Manager:** Manages controllers that regulate system state.
+  - **Cloud Controller Manager (optional):** Interfaces with cloud provider APIs for managing cloud-specific resources.
 
-#### Control Plane (Master Node)
+- **Nodes**:
+  - **Kubelet:** An agent on each node that communicates with the control plane, managing containers.
+  - **Kube Proxy:** Maintains network rules and handles network traffic.
+  - **Container Runtime:** Executes and manages container processes.
+  - **Pod:** The smallest deployable unit, containing one or more containers.
 
-- **API Server:** The central control point for all interactions with the cluster, exposing the Kubernetes API.
-- **Etcd:** A distributed key-value store for storing cluster configuration data.
-- **Scheduler:** Responsible for placing workloads onto nodes in the cluster.
-- **Controller Manager:** Manages controllers that regulate system state.
-- **Cloud Controller Manager (optional):** Interfaces with cloud provider APIs for managing cloud-specific resources.
+> Here's a brief description of kubernetes architecture overview.
 
-#### Node (Minion Node)
+![Alt text](k8s-archi.jpg)
 
-- **Kubelet:** An agent on each node that communicates with the control plane, managing containers.
-- **Kube Proxy:** Maintains network rules and handles network traffic.
-- **Container Runtime:** Executes and manages container processes.
-- **Pod:** The smallest deployable unit, containing one or more containers.
 
-### How Kubernetes Works
+## How Kubernetes Works
 
 Kubernetes follows a declarative model, where you specify the desired state of your application, and Kubernetes takes care of making it happen. Here's a simplified workflow:
 
@@ -40,17 +41,13 @@ Kubernetes follows a declarative model, where you specify the desired state of y
 6. Kube Proxy manages network rules to enable communication between Pods.
 7. Controllers continuously monitor and reconcile the actual state with the desired state.
 
-### Benefits of Kubernetes Architecture
+## Benefits of Kubernetes
 
 - **High Availability:** Kubernetes is designed for resilience, with no single point of failure in its control plane.
 - **Scalability:** Easily scale your applications up or down by adding or removing nodes.
 - **Declarative Configuration:** Define what your application should look like, and Kubernetes ensures it stays that way.
 - **Self-Healing:** Kubernetes automatically replaces failed containers or nodes.
 - **Portability:** Run your applications consistently across various cloud providers or on-premises.
-
-> Here's a brief description of kubernetes architecture overview.
-
-![Alt text](k8s-archi.jpg)
 
 
 ## Conclusion
@@ -63,4 +60,4 @@ For more in-depth documentation and resources, refer to the [official Kubernetes
 ## Author(s)
 
 - [Mansour KA](mansourka.com)
-- 
+
