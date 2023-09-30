@@ -26,7 +26,7 @@ Kubernetes architecture is built around a set of key components that work togeth
 
 > Here's a brief description of kubernetes architecture overview.
 
-![Alt text](k8s-archi.png)
+![Alt text](k8s-archi.jpg)
 
 
 ## How Kubernetes Works
