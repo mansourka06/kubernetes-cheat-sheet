@@ -33,13 +33,13 @@ Kubernetes architecture is built around a set of key components that work togeth
 
 Kubernetes follows a declarative model, where you specify the desired state of your application, and Kubernetes takes care of making it happen. Here's a simplified workflow:
 
-- 1. You define your application's desired state using manifests (YAML files) for resources like Pods, Deployments, and Services.
-- 2. These manifests are submitted to the Kubernetes API Server.
-- 3. The API Server stores this desired state in Etcd.
-- 4. The Scheduler places Pods on suitable nodes based on resource availability and constraints.
-- 5. Kubelet agents on nodes ensure Pods are running as specified.
-- 6. Kube Proxy manages network rules to enable communication between Pods.
-- 7. Controllers continuously monitor and reconcile the actual state with the desired state.
+1. Defining application's desired state using manifests (YAML files) for resources like Pods, Deployments, and Services.
+2. These manifests are submitted to the Kubernetes API Server.
+3. The API Server stores this desired state in Etcd.
+4. The Scheduler places Pods on suitable nodes based on resource availability and constraints.
+5. Kubelet agents on nodes ensure Pods are running as specified.
+6. Kube Proxy manages network rules to enable communication between Pods.
+7. Controllers continuously monitor and reconcile the actual state with the desired state.
 
 ## Benefits of Kubernetes
 
@@ -59,5 +59,5 @@ For more in-depth documentation and resources, refer to the [official Kubernetes
 
 ## Author(s)
 
-- [Mansour KA](mansourka.com)
+- [Mansour KA](https://mansourka-cv.web.app/)
 
