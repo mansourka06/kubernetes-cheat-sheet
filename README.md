@@ -2,20 +2,24 @@
 
 This repository provides a comprehensive guide to Kubernetes architecture, commonly used commands, and flags.
 
-> Kubernetes, often abbreviated as K8s, is an open-source container orchestration engine for automating deployment, scaling, and management of containerized applications.
-
-> For additional commands and information, refer to the [Kubernetes Cheat Sheet Official Documentation](https://kubernetes.io/docs/reference/kubectl/cheatsheet/).
-
 ---
 
 ## Table of Contents
 
+- [Introduction](#introduction)
 - [Kubernetes Architecture](#kubernetes-architecture)
 - [How Kubernetes Works](#how-kubernetes-works)
 - [Benefits of Kubernetes](#benefits-of-kubernetes)
 - [Kubernetes commonly used commands](#kubernetes-commonly-used-commands)
+- [Conclusion](#conclusion)
 
 ---
+
+## Introduction
+
+Kubernetes, often abbreviated as K8s, is an open-source container orchestration engine for automating deployment, scaling, and management of containerized applications.
+
+For additional commands and information, refer to the [Kubernetes Cheat Sheet Official Documentation](https://kubernetes.io/docs/reference/kubectl/cheatsheet/).
 
 ## Kubernetes Architecture
 
