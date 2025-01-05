@@ -25,6 +25,12 @@ For additional commands and information, refer to the [Kubernetes Cheat Sheet Of
 
 Kubernetes architecture is built around key components that work together to ensure the reliable and efficient operation of containerized workloads. Below is an overview of its components:
 
+### Architecture Overview
+
+> Below is a high-level overview of the Kubernetes architecture.
+
+![Kubernetes Architecture](k8s-archi.jpg)
+
 ### Control Plane (Master Node)
 
 - **API Server**: The central control point for all interactions with the cluster, exposing the Kubernetes API.
@@ -39,12 +45,6 @@ Kubernetes architecture is built around key components that work together to ens
 - **Kube Proxy**: Maintains network rules and handles network traffic between Pods.
 - **Container Runtime**: Executes and manages container processes (e.g., Docker, CRI-O, or containerd).
 - **Pod**: The smallest deployable unit, containing one or more tightly coupled containers.
-
-### Architecture Overview
-
-> Below is a high-level overview of the Kubernetes architecture.
-
-![Kubernetes Architecture](k8s-archi.jpg)
 
 ---
 
